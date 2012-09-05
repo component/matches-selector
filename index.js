@@ -6,15 +6,20 @@
 var proto = Element.prototype;
 
 /**
- * Vendor function or `match()`.
+ * Vendor function.
  */
 
-module.exports = proto.matchesSelector
+var vendor = proto.matchesSelector
   || proto.webkitMatchesSelector
   || proto.mozMatchesSelector
   || proto.msMatchesSelector
-  || proto.oMatchesSelector
-  || match;
+  || proto.oMatchesSelector;
+
+/**
+ * Expose `match()`.
+ */
+
+module.exports = match;
 
 /**
  * Match `el` to `selector`.
@@ -26,6 +31,7 @@ module.exports = proto.matchesSelector
  */
 
 function match(el, selector) {
+  if (vendor) return vendor.call(el, selector);
   var nodes = el.parentNode.querySelectorAll(selector);
   for (var i = 0; i < nodes.length; ++i) {
     if (nodes[i] == el) return true;
