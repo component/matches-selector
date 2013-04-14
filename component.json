@@ -4,6 +4,9 @@
   "description": "Check if an element matches a given selector",
   "version": "0.0.1",
   "keywords": ["match", "element", "selector"],
+  "dependencies": {
+    "component/query": "*"
+  },
   "development": {
     "component/domify": "*"
   },
