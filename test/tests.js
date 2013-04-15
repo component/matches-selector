@@ -6,7 +6,7 @@ function assert(expr) {
   if (!expr) throw new Error('assertion failed');
 }
 
-var ul = domify('<ul><li><em>foo</em></li></ul>');
+var ul = domify('<ul><li><em>foo</em></li></ul>')[0];
 var li = ul.children[0];
 var em = li.children[0];
 
@@ -23,7 +23,7 @@ describe('matchesSelector(el, selector)', function(){
     assert(false === matches(li, 'div > li'));
 
     assert(true == matches(ul, 'ul'));
-    assert(true == matches(ul, 'div ul'));
+    assert(false == matches(ul, 'div ul'));
     assert(false == matches(ul, 'body > ul'));
   })
 })

@@ -1,3 +1,8 @@
+/**
+ * Module dependencies.
+ */
+
+var query = require('query');
 
 /**
  * Element prototype.
@@ -32,7 +37,7 @@ module.exports = match;
 
 function match(el, selector) {
   if (vendor) return vendor.call(el, selector);
-  var nodes = el.parentNode.querySelectorAll(selector);
+  var nodes = query(selector, el.parentNode);
   for (var i = 0; i < nodes.length; ++i) {
     if (nodes[i] == el) return true;
   }
