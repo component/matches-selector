@@ -1,12 +1,12 @@
 
 var matches = require('matches-selector')
-  , domify = require('component-domify');
+  , domify = require('domify');
 
 function assert(expr) {
   if (!expr) throw new Error('assertion failed');
 }
 
-var ul = domify('<ul><li><em>foo</em></li></ul>')[0];
+var ul = domify('<ul><li><em>foo</em></li></ul>');
 var li = ul.children[0];
 var em = li.children[0];
 
