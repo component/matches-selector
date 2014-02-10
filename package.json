@@ -1,0 +1,18 @@
+{
+  "name": "component-matches-selector",
+  "version": "0.1.1",
+  "description": "Check if an element matches a given selector",
+  "keywords": [
+    "match",
+    "element",
+    "selector"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/component/matches-selector.git"
+  },
+  "dependencies": {
+    "component-query": "*"
+  },
+  "license": "MIT"
+}
