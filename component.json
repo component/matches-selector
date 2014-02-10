@@ -3,7 +3,11 @@
   "repo": "component/matches-selector",
   "description": "Check if an element matches a given selector",
   "version": "0.1.1",
-  "keywords": ["match", "element", "selector"],
+  "keywords": [
+    "match",
+    "element",
+    "selector"
+  ],
   "dependencies": {
     "component/query": "*"
   },
