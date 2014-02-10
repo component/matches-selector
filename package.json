@@ -1,6 +1,6 @@
 {
   "name": "component-matches-selector",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Check if an element matches a given selector",
   "keywords": [
     "match",
