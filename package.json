@@ -12,7 +12,7 @@
     "url": "git://github.com/component/matches-selector.git"
   },
   "dependencies": {
-    "component-query": "*"
+    "component-query": "^0.0.3"
   },
   "license": "MIT"
 }
