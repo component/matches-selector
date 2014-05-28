@@ -11,9 +11,6 @@
     "type": "git",
     "url": "git://github.com/component/matches-selector.git"
   },
-  "browser": {
-    "query": "component-query"
-  },
   "dependencies": {
     "component-query": "*"
   },
