@@ -1,4 +1,9 @@
 
+0.1.4 / 2014-05-27
+==================
+
+  * force re-publish since something happened with npm
+
 0.1.3 / 2014-05-27
 ==================
 
