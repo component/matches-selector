@@ -2,7 +2,7 @@
   "name": "matches-selector",
   "repo": "component/matches-selector",
   "description": "Check if an element matches a given selector",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "keywords": [
     "match",
     "element",
