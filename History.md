@@ -1,4 +1,9 @@
 
+0.1.5 / 2014-07-27
+==================
+
+ * index: don't throw an Error when given falsey or non-Element nodes
+
 0.1.4 / 2014-05-27
 ==================
 
