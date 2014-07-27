@@ -26,4 +26,10 @@ describe('matchesSelector(el, selector)', function(){
     assert(false == matches(ul, 'div ul'));
     assert(false == matches(ul, 'body > ul'));
   })
+  it('should not throw an Error when given `null`', function(){
+    assert(false == matches(null, 'ul'));
+  })
+  it('should not throw an Error when given a TextNode', function(){
+    assert(false == matches(em.firstChild, 'ul'));
+  })
 })
