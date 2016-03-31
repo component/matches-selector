@@ -2,7 +2,11 @@
  * Module dependencies.
  */
 
-var query = require('query');
+try {
+  var query = require('query');
+} catch (err) {
+  var query = require('component-query');
+}
 
 /**
  * Element prototype.
