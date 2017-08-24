@@ -12,7 +12,8 @@ try {
  * Element prototype.
  */
 
-var proto = Element.prototype;
+var Element = require('global-object').Element;
+var proto = Element && Element.prototype || {};
 
 /**
  * Vendor function.

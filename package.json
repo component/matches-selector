@@ -12,7 +12,8 @@
     "url": "git://github.com/component/matches-selector.git"
   },
   "dependencies": {
-    "component-query": "*"
+    "component-query": "*",
+    "global-object": "^1.0.0"
   },
   "browser": {
     "query": "component-query"
